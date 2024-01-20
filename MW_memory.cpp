@@ -119,7 +119,7 @@ std::vector<std::string> getSubdirectories(const std::string& directory) {
     return subdirectories;
 }
 bool processFile() {
-    std::ifstream file("config.txt"); // 配置文件路径
+    std::ifstream file("/data/adb/modules/NEW_MW_A0/配置文件.conf"); // 配置文件路径
     if (!file) {
         std::cerr << "无法打开配置文件\n";
         return false;
